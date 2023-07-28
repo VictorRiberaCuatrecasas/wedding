@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./MainNavigation.module.scss";
 import HamburgerMenu from "../navbar/HamburgerMenu";
-// import ThemeToggler from "../navbar/ThemeToggler";
 import LocaleSelector from "../navbar/LocaleSelector";
 
 export default function MainNavigation() {
@@ -34,19 +33,17 @@ export default function MainNavigation() {
 
   return (
     <nav className={`${styles.navbar} ${isNavbarVisible ? "" : styles.hidden}  ${isTopScrollPos && styles.topScroll}`}>
-      <div className={styles.logo}>Logo</div>
       <ul className={`${styles.navLinks} ${isMenuOpen ? styles.active : ""}`}>
-        <li data-cursor="pointer">
+        <li>
           <Link href="/test1">Test1</Link>
         </li>
-        <li data-cursor="pointer">
+        <li>
           <Link href="/test2">Test2</Link>
         </li>
-        <li data-cursor="pointer">
+        <li>
           <Link href="/test3">Test3</Link>
         </li>
       </ul>
-      {/* <ThemeToggler /> Future  theme toggle ?*/}
       <LocaleSelector />
       <HamburgerMenu handleMenu={handleMenuClick} />
     </nav>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../components/header/Header";
+import Intro from "../components/intro/Intro";
 import { useRouter } from "next/router";
 import styles from "./index.module.scss";
 import { useTranslation } from "next-i18next";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Victor Ribera</title>
+        <title>Victor & Marta</title>
         <meta
           name="description"
           content="Victor Ribera personal website and portfolio"
@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Header />
+        <Intro />
         <h1>{locale}</h1>
         <h2>{t("test")}</h2>
 

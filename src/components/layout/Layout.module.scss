@@ -1,39 +1,4 @@
 .noiseContainer {
-  // option 1
-  // background-attachment: fixed;
-  // background-repeat: repeat;
-  // background-size: auto;
-  // left: 0;
-  // opacity: 1;
-  // pointer-events: none;
-  // position: fixed;
-  // top: 0;
-  // transition: opacity 1s ease-out;
-  // height: 100vh;
-  // width: 100vw;
-  // z-index: 1;
-  // background-image: url("~/public/images/noise.png");
-  // animation: noise-animation 1s steps(10) infinite;
-  // background-position: 0 0;
-  // filter: contrast(5);
-
-  //option 2
-  // z-index: 0;
-  // position: fixed;
-  // top: -50%;
-  // left: -50%;
-  // right: -50%;
-  // bottom: -50%;
-  // width: 200%;
-  // height: 200vh;
-  // background: transparent url("~/public/images/noise.png") repeat 0 0;
-  // background-repeat: repeat;
-  // animation: noise-animation 0.2s infinite;
-  // opacity: 0.9;
-  // visibility: visible;
-  // filter: contrast(5);
-
-  //option 3
   position: fixed;
   z-index: 0;
   top: -300%;
@@ -50,12 +15,6 @@
 }
 
 @keyframes noise-animation {
-  //option 1
-  // 100% {
-  //   background-position: 100% 100%;
-  // }
-
-  //option 2
   0% {
     transform: translate(0, 0);
   }
